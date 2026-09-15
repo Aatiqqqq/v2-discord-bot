@@ -158,7 +158,7 @@ function dashboardComponents() {
     ),
     new ActionRowBuilder().addComponents(
       new ButtonBuilder().setCustomId("fm:profile").setLabel("My Profile").setEmoji("👤").setStyle(ButtonStyle.Secondary),
-      new ButtonBuilder().setCustomId("fm:refresh").setLabel("Refresh").setEmoji("↻").setStyle(ButtonStyle.Success),
+      new ButtonBuilder().setCustomId("fm:refresh").setLabel("Refresh").setEmoji("🔄").setStyle(ButtonStyle.Success),
     ),
   ];
 }
@@ -464,6 +464,10 @@ client.on("guildMemberRemove", member => {
     "Member left server",
     `${member.user.tag} (${member.id})`
   );
+});
+
+client.on("error", err => {
+  console.error("❌ Discord client error:", err);
 });
 
 client.login(TOKEN);
