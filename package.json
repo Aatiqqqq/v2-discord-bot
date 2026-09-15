@@ -1,0 +1,17 @@
+{
+  "name": "family-management-suite-v2",
+  "version": "2.0.0",
+  "description": "Standalone professional Discord family management and analytics suite.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "express": "^4.21.0"
+  }
+}
